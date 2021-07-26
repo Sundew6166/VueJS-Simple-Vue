@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <cash-create-form></cash-create-form>
+    <cash-table></cash-table>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import CashCreateForm from '@/components/CashCreateForm'
+import CashTable from '@/components/CashTable'
 
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
-  }
+    CashCreateForm,
+    CashTable
+    }
 }
 </script>
+
+<style>
+
+</style>
