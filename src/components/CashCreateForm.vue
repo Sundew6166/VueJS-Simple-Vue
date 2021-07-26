@@ -4,22 +4,22 @@
     <div>
         <div>
             <label for="date">วัน/เดือน/ปี </label>
-            <input type="text" v-model="form.date_list.date">
+            <input type="text" v-model="form.date">
         </div>   
 
         <div>
             <label for="list">รายการ </label>
-            <input type="text" v-model="form.date_list.list">
+            <input type="text" v-model="form.list">
         </div>  
 
         <div>
             <label for="income">รายรับ </label>
-            <input type="text" v-model="form.date_list.income">
+            <input type="text" v-model="form.income">
         </div> 
 
          <div>
             <label for="expense">รายจ่าย </label>
-            <input type="text" v-model="form.date_list.expense">
+            <input type="text" v-model="form.expense">
         </div> 
 
         <div>
@@ -37,30 +37,27 @@ export default {
     data() {
         return {
             form: {
-                date_list: {
                     date: '',
                     list: '',
-                    income: '',
-                    expense: ''
+                    income: 0,
+                    expense: 0,
+                    total: 0
                 }
-            }
         }
     },
     methods: {
         clearForm() {
             this.form = {
-                date_list: {
                     date: '',
                     list: '',
-                    income: '',
-                    expense: ''
-                }
+                    income: 0,
+                    expense: 0,
+                    total: 0
             }
         },
         addCash() {
-            let payload = {
-                date_list: this.form.date_list
-            }
+            let payload = this.form
+    
             console.log(payload)
             CashStore.dispatch("addCash", payload)
 

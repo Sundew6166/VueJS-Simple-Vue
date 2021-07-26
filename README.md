@@ -1,18 +1,16 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # cashbook
+```
+How to run
+
+1. open Terminal
+2. git clone https://github.com/Sundew6166/VueJS-Simple-Vue.git
+3. cd VueJS-Simple-Vue
+4. npm run serve
+5. select copy link Local:  http://localhost:8080/  to opne in chrome or - Network: http://192.168.1.104:8080/  (Phone when connect WIFI the same)
+
+ 
+
+```
 
 ## Project setup
 ```
